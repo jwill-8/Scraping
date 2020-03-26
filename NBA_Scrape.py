@@ -197,20 +197,7 @@ full_season_df = pd.concat([fulldf_oct, fulldf_nov, fulldf_dec, fulldf_jan, full
                            axis = 0).reset_index(drop=True)
 #%%
 full_season_df.to_csv("/Users/james/Desktop/ADEC7430/SavedData/full_season_df.csv")
-# =============================================================================
-# #%% Read csv if program closes
-# recovered_full_season_df = pd.read_csv("C:/Users/mjlut/Documents/Grad_School/Big_Data_Econometrics/Assignments/SavedData/full_season_df.csv").reset_index(drop = True)
-# recovered_full_season_df.to_csv("C:/Users/mjlut/Documents/Grad_School/Big_Data_Econometrics/Assignments/SavedData/recovered_full_season_df.csv")
-# recovered_full_season_df = recovered_full_season_df.reset_index(drop = True) 
-# #resetting index didn't work when reading the df in.
-# print(recovered_full_season_df.iloc[0,3]) #still says 4: will have to drop that column
-# #drop column "Unnamed: 0"
-# recovered_full_season_df = recovered_full_season_df.drop(["Unnamed: 0"], axis = 1)
-# print(recovered_full_season_df.iloc[0,3]) #7. We're in business again. 
-# full_season_df = recovered_full_season_df.copy()
-# =============================================================================
-#%% Remove rows with DNP
-# =============================================================================
+
 # full_season1 = full_season_df.copy()
 # full_szn = full_season1[full_season1]
 # full_szn.to_csv("C:/Users/mjlut/Documents/Grad_School/Big_Data_Econometrics/Assignments/SavedData/full_szn.csv")
